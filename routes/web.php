@@ -15,3 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('/welcome','StudentController');
+
+Route::get('/test',function(){
+    return "welcome to new test";
+})->name('newtest');
